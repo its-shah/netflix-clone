@@ -1,0 +1,151 @@
+.feature2 {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: black;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 12rem;
+  gap: 100px;
+}
+
+.left-mobile {
+  color: white;
+  width: 100%;
+}
+
+.left-mobile h1 {
+  font-size: 3.125rem;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+.left-mobile h3 {
+  font-size: 1.625rem;
+  font-weight: 300;
+}
+
+.right-mobile {
+  position: relative;
+}
+
+.right-mobile img {
+  width: 900px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.downloading-preview {
+  display: flex;
+  border: 2px solid #3c3c3c;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: black;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  bottom: 250px;
+}
+
+.downloading-banner {
+  width: 50px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.downloading {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.downloading-content h3 {
+  color: white;
+  font-size: 17px;
+}
+
+.downloading-content p {
+  color: #006edf;
+}
+
+.downloading-logo {
+  width: 50px;
+}
+
+@media screen and (max-width: 1200px) {
+  .feature2 {
+    padding: 4rem 4rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .feature2 {
+    padding: 4rem 2rem;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .right-mobile img {
+    width: 450px;
+  }
+
+  .left-mobile {
+    text-align: center;
+  }
+
+  .left-mobile h1 {
+    font-size: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .left-mobile h1 {
+    font-size: 2rem;
+  }
+
+  .left-mobile h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .right-mobile img {
+    width: 340px;
+  }
+
+  .feature2 {
+    padding: 4rem 1rem;
+  }
+
+  .downloading-preview {
+    left: 0%;
+  }
+
+  .downloading-content h3 {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .left-mobile h1 {
+    font-size: 2rem;
+  }
+
+  .left-mobile h3 {
+    font-size: 1.2rem;
+  }
+
+  .right-mobile img {
+    width: 322px;
+  }
+
+  .downloading-banner {
+    width: 30px;
+  }
+
+  .downloading-preview {
+    width: 270px;
+    left: 0%;
+  }
+}

@@ -1,0 +1,143 @@
+.netflixshow {
+  background-color: #000000;
+  transition: all 0.5s ease-in-out;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+.banner {
+  background-color: black;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.banner::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.banner-h,
+.banner-p {
+  font-size: 3.5rem;
+  color: white;
+  width: 50%;
+  z-index: 10;
+  margin-left: 20px;
+}
+
+.banner-h {
+  margin-top: 200px;
+}
+
+.banner-p {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.832);
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+  z-index: 10;
+}
+
+.play-btn {
+  width: 120px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.5s;
+  background-color: rgb(233, 233, 233);
+}
+
+.play-btn:hover {
+  background-color: rgb(182, 182, 182);
+}
+
+.plus-btn {
+  width: 120px;
+  padding: 10px;
+  outline: none;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.5s;
+  background-color: #222222;
+  color: white;
+}
+
+.plus-btn:hover {
+  background-color: rgb(126, 126, 126);
+}
+
+@media screen and (max-width: 768px) {
+  .banner {
+    height: 500px;
+  }
+
+  .banner-h {
+    font-size: 2.5rem;
+    width: 80%;
+  }
+
+  .banner-p {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .banner-h {
+    font-size: 2rem;
+    width: 100%;
+    margin-left: 0;
+    padding: 0 20px;
+  }
+
+  .banner-p {
+    width: 100%;
+    padding: 20px;
+    margin-left: 0;
+    padding-bottom: 10px;
+  }
+
+  .play-btn {
+    width: 100px;
+    padding: 8px;
+  }
+
+  .plus-btn {
+    width: 100px;
+    padding: 8px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .banner-h {
+    font-size: 1.8rem;
+    padding: 0 10px;
+  }
+
+  .banner-p {
+    padding: 10px;
+  }
+}

@@ -1,0 +1,96 @@
+.hero {
+  width: 100%;
+  height: 93vh;
+  background: url(../../hero-banner.jpg) rgba(0, 0, 0, 0.65);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.title {
+  text-align: center;
+  color: white;
+}
+
+.title h1 {
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+
+.title h4 {
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  margin-bottom: 25px;
+}
+
+.title p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.right-svg {
+  color: white;
+}
+
+@media screen and (max-width: 1200px) {
+  .title {
+    margin-top: 100px;
+  }
+
+  .title h1 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .title {
+    margin-top: 100px;
+  }
+
+  .title h1 {
+    font-size: 45px;
+  }
+
+  .title h4 {
+    font-size: 22px;
+  }
+
+  .title p {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .title h1 {
+    font-size: 35px;
+  }
+
+  .title h4 {
+    font-size: 22px;
+  }
+
+  .title p {
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .title h1 {
+    font-size: 35px;
+  }
+
+  .title h4 {
+    font-size: 22px;
+  }
+  .title p {
+    padding: 0 10px;
+  }
+}

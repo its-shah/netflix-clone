@@ -1,0 +1,14 @@
+.row-title {
+  color: white;
+}
+
+.row {
+  padding: 1rem;
+}
+
+.cards-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 12px;
+  padding: 1rem;
+}
